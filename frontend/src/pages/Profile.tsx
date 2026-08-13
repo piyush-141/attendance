@@ -52,7 +52,7 @@ export default function Profile() {
   // Delete confirmation state
   const [deletingSubject, setDeletingSubject] = useState<string | null>(null);
   const [deletingClass, setDeletingClass] = useState<string | null>(null);
-  const [confirmText, setConfirmText] = useState('');
+
   const [pendingDelete, setPendingDelete] = useState<
     { type: 'subject'; id: string; name: string } |
     { type: 'class'; id: string; name: string; subjectId: string } |
