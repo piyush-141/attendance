@@ -79,10 +79,9 @@ export default function Profile() {
 
   const askDelete = (item: typeof pendingDelete) => {
     setPendingDelete(item);
-    setConfirmText('');
   };
 
-  const cancelDelete = () => { setPendingDelete(null); setConfirmText(''); };
+  const cancelDelete = () => { setPendingDelete(null); };
 
   const confirmDelete = async () => {
     if (!pendingDelete) return;
@@ -106,7 +105,6 @@ export default function Profile() {
       setDeletingSubject(null);
       setDeletingClass(null);
       setPendingDelete(null);
-      setConfirmText('');
     }
   };
 
